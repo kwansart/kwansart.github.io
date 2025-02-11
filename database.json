@@ -8,7 +8,7 @@
     "VersionAvailable": "",
     "Evergreen": "",
     "Url_Installer": "",
-    "IntuneWin": false,
+    "IntuneWin": true,
     "TestedInstall": true,
     "TestedUninstall": true
   },
@@ -21,7 +21,7 @@
     "VersionAvailable": "",
     "Evergreen": null,
     "Url_Installer": null,
-    "IntuneWin": false,
+    "IntuneWin": true,
     "TestedInstall": true,
     "TestedUninstall": true
   },
@@ -61,7 +61,7 @@
     "VersionAvailable": "",
     "Evergreen": null,
     "Url_Installer": null,
-    "IntuneWin": false,
+    "IntuneWin": true,
     "TestedInstall": true,
     "TestedUninstall": true
   },
@@ -142,19 +142,6 @@
     "IntuneWin": false,
     "TestedInstall": true,
     "TestedUninstall": true
-  },
-  {
-    "Vendor": "Eset",
-    "Product": "Protect",
-    "Versions": [
-      "4.2.9.0"
-    ],
-    "VersionAvailable": "",
-    "Evergreen": null,
-    "Url_Installer": null,
-    "IntuneWin": false,
-    "TestedInstall": false,
-    "TestedUninstall": false
   },
   {
     "Vendor": "Fluke",
@@ -247,8 +234,8 @@
     "VersionAvailable": "6.3.6.56144",
     "Evergreen": "Get-EvergreenApp -Name Zoom | Where-Object { $_.Installer -eq 'Admin' -and $_.Platform -eq 'Desktop' -and $_.Architecture -eq 'x64'}",
     "Url_Installer": "",
-    "IntuneWin": false,
-    "TestedInstall": false,
-    "TestedUninstall": false
+    "IntuneWin": true,
+    "TestedInstall": true,
+    "TestedUninstall": true
   }
 ]
