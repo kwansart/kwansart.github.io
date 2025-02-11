@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>D-Consult Deployments</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="src/bootstrap-5.3.3-dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="src/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="container-fluid p-5 bg-primary text-white text-center">
+  <h1>DeploymentDashboard</h1>
+  <p>Eine Übersicht der bestehenden Deployments</p> 
+</div>
+  
+<div class="container mt-3">
+    <h2>Apps</h2>
+    <p>Eine Übersicht der vorhandenen Apps und deren Zustand:</p>            
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Hersteller</th>
+          <th>Produkt</th>
+          <th>Versionen</th>
+          <th>Verfügbar</th>
+          <th>Tests</th>
+          <th>IntuneWin</th>
+        </tr>
+      </thead>
+      <tbody id="table-body">
+        <!-- Rows will be inserted here by JavaScript -->
+      </tbody>
+    </table>
+  </div>
+
+  <script>
+    fetch('database.json')
+      .then(response => response.json())
+      .then(data => {
+        const tableBody = document.getElementById('table-body');
+        data.forEach(item => {
+          const row = document.createElement('tr');
+          row.innerHTML = `
+            <td>${item.Vendor}</td>
+            <td>${item.Product}</td>
+            <td>${item.Versions.join(', ')}</td>
+            <td>${item.VersionAvailable || 'N/A'}</td>
+            <td>${item.TestedInstall ? 'Installiert' : 'Nicht installiert'} / ${item.TestedUninstall ? 'Deinstalliert' : 'Nicht deinstalliert'}</td>
+            <td>${item.IntuneWin ? 'Ja' : 'Nein'}</td>
+          `;
+          tableBody.appendChild(row);
+        });
+      })
+      .catch(error => console.error('Error loading JSON data:', error));
+  </script>
+
+</body>
+</html>

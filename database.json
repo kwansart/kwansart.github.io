@@ -1,0 +1,254 @@
+[
+  {
+    "Vendor": "3cx",
+    "Product": "PhoneForWindows",
+    "Versions": [
+      "16.0"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": "",
+    "Url_Installer": "",
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "Adobe",
+    "Product": "Acrobat Reader DC",
+    "Versions": [
+      "24.5.20399.0"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "Citrix",
+    "Product": "Workspace App Current",
+    "Versions": [
+      "24.9.1.207",
+      "24.9.10.28"
+    ],
+    "VersionAvailable": "24.9.10.28",
+    "Evergreen": "Get-EvergreenApp -Name CitrixWorkspaceApp | Where-Object { $_.Stream -eq 'Current' }",
+    "Url_Installer": "",
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "Citrix",
+    "Product": "Workspace App LTSR",
+    "Versions": [
+      "24.2.2000.2031"
+    ],
+    "VersionAvailable": "24.2.2000.2031",
+    "Evergreen": "Get-EvergreenApp -Name CitrixWorkspaceApp | Where-Object { $_.Stream -eq 'LTSR' }",
+    "Url_Installer": "",
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "D-Consult",
+    "Product": "Fernwartung",
+    "Versions": [
+      "25.1.29.1533"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "Datev",
+    "Product": "Belegtransfer",
+    "Versions": [
+      "5.4.5.0"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": false,
+    "TestedUninstall": false
+  },
+  {
+    "Vendor": "Datev",
+    "Product": "Leserins",
+    "Versions": [
+      "1.5.2.20327"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": false,
+    "TestedUninstall": false
+  },
+  {
+    "Vendor": "Datev",
+    "Product": "sipacompact",
+    "Versions": [
+      "7.8.106.24326"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "DisplayLink",
+    "Product": "DisplayLink USB Graphics",
+    "Versions": [
+      "11.3"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "Elgato",
+    "Product": "Camera Hub",
+    "Versions": [
+      "1.11.0.4066"
+    ],
+    "VersionAvailable": "1.11",
+    "Evergreen": "Get-EvergreenApp -Name ElgatoCameraHub",
+    "Url_Installer": "",
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "Eset",
+    "Product": "EndpointSecurity",
+    "Versions": [
+      "11.0.2032.0"
+    ],
+    "VersionAvailable": "11.0.2032.0",
+    "Evergreen": "Get-EvergreenApp -Name EsetEndpointSecurity | Where-Object { $_.Architecture -eq 'x64' -and $_.Language -eq 'de_DE' }",
+    "Url_Installer": "",
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "Eset",
+    "Product": "Protect",
+    "Versions": [
+      "4.2.9.0"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": false,
+    "TestedUninstall": false
+  },
+  {
+    "Vendor": "Fluke",
+    "Product": "LinkWare",
+    "Versions": [
+      "11.5.0.0",
+      "11.6.0.0"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "Jabra",
+    "Product": "Direct",
+    "Versions": [
+      "6.17.21301.0",
+      "6.21.1701"
+    ],
+    "VersionAvailable": "6.21.01701",
+    "Evergreen": "Get-EvergreenApp -Name JabraDirect",
+    "Url_Installer": "",
+    "IntuneWin": false,
+    "TestedInstall": false,
+    "TestedUninstall": false
+  },
+  {
+    "Vendor": "Lenovo",
+    "Product": "USB-C Dock Gen2 FW",
+    "Versions": [
+      "1.1.20.0"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": false,
+    "TestedUninstall": false
+  },
+  {
+    "Vendor": "Microsoft",
+    "Product": "Teams",
+    "Versions": [
+      "1.24.25200.0",
+      "25007.607.3371.8436"
+    ],
+    "VersionAvailable": "25007.607.3371.8436",
+    "Evergreen": "Get-EvergreenApp -Name MicrosoftTeams | Where-Object { $_.Release -eq 'Enterprise' -and $_.Architecture -eq 'x64'}",
+    "Url_Installer": "",
+    "IntuneWin": false,
+    "TestedInstall": true,
+    "TestedUninstall": true
+  },
+  {
+    "Vendor": "NFON",
+    "Product": "Cloudya",
+    "Versions": [
+      "1.7.7"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": false,
+    "TestedUninstall": false
+  },
+  {
+    "Vendor": "PFU",
+    "Product": "PaperStream Capture",
+    "Versions": [
+      "4.0.0.9"
+    ],
+    "VersionAvailable": "",
+    "Evergreen": null,
+    "Url_Installer": null,
+    "IntuneWin": false,
+    "TestedInstall": false,
+    "TestedUninstall": false
+  },
+  {
+    "Vendor": "Zoom",
+    "Product": "Workplace",
+    "Versions": [
+      "6.1.11",
+      "6.3.6.56144"
+    ],
+    "VersionAvailable": "6.3.6.56144",
+    "Evergreen": "Get-EvergreenApp -Name Zoom | Where-Object { $_.Installer -eq 'Admin' -and $_.Platform -eq 'Desktop' -and $_.Architecture -eq 'x64'}",
+    "Url_Installer": "",
+    "IntuneWin": false,
+    "TestedInstall": false,
+    "TestedUninstall": false
+  }
+]
